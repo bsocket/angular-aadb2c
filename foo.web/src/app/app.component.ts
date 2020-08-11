@@ -11,7 +11,7 @@ import { authConfig, DiscoveryDocumentConfig } from './auth.config';
   </h1>
   
   <h1 *ngIf="claims">
-  Hi, {{claims.given_name}}!
+  Hi, {{claims['given_name']}}!
   </h1>
   
   <h2 *ngIf="claims">Your Claims:</h2>
